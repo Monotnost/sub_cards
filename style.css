@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Ebrima;
+}
+
+body{
+    background-color: #333645;
+}
+
+.card{
+    padding-top: 63px;
+    margin: 64px 0 0 48px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    border-radius: 36px;
+    overflow: hidden;
+    background-color: hotpink;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    vertical-align: top;
+    box-shadow: 5px 1px 10px #000000;
+    width: 340px;
+    height: 450px;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 21px 20px #1f1f1f;
+}
+
+.card p{
+    text-transform: capitalize;
+    padding: 2px 0;
+}
+
+.card p:first-child{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.card span{
+    text-transform: uppercase;
+}
+
+.card--basic{
+    background: rgb(59,142,255);
+    background: linear-gradient(90deg, rgba(59,142,255,0.7795823665893271) 0%, rgba(79,249,255,1) 100%);
+}
+
+.card--premium{
+    margin-left: 32px;
+    background: rgb(59,255,226);
+    background: linear-gradient(270deg, rgba(59,255,226,0.7795823665893271) 0%, rgba(149,255,79,1) 100%);
+}
+
+.card__price{
+    position: relative;
+    font-size: 126px;
+}
+
+.card__plan{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.card__offerings{
+    font-size: 22px;
+}
+
+.card--awesome{
+    background: rgb(255,35,84);
+    background: linear-gradient(270deg, rgba(255,35,84,1) 0%, rgba(255,91,48,1) 100%);
+    height: 530px;
+    width: 400px;
+
+}
+
+.card--awesome .card__price{
+    font-size: 148px;
+}
+
+.card--awesome .card__offerings{
+    font-size: 22px;
+}
+.card__price:before{
+    position: absolute;
+    content: "$ ";
+    font-size: 36px;
+    bottom: 20px;
+    left:-20px;
+}
+
+.card__plan:before, .card__plan:after{
+    content: " – ";
+}
+
+
+.card__button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 22px 40px;
+    background: #fff;
+    border-radius: 36px 0 0 0;
+    color: #4b4b4e;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
